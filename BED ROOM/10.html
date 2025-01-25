@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BED ROOM</title>
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="offer-banner">
+      <p>
+        On a purchase of $5000 or more, there is a 10% discount and free
+        delivery.
+      </p>
+    </div>
+
+  
+
+    <div class="navbar">
+      <div class="hamburger">
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+        <div class="hamburger-line"></div>
+      </div>
+      <a href="../index.html"><img src="../images/logo.png" class="logo" /> </a>
+
+      <div class="searchbar">
+        <input type="text" class="search" placeholder="Search..." required />
+        <i class="fa-solid fa-magnifying-glass" id="searchicon"></i>
+      </div>
+
+      <div class="icon">
+        <i class="fa-solid fa-cart-shopping" id="cardicon"></i>
+      </div>
+    </div>
+
+    <div class="categories">
+      <div class="cate">
+        <ul>
+          <li><a href="../index.html">HOME</a></li>
+          <li><a href="../bedroom.html">BEDROOM</a></li>
+          <li><a href="../dinningroom.html">DINNING ROOM</a></li>
+          <li><a href="../livingroom.html">LIVING ROOM</a></li>
+          <li><a href="../decoration.html">DECORATION</a></li>
+          <li><a href="../office.html">OFFICE</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../contact.html">CONTACT </a></li>
+        </ul>
+      </div>
+    </div>
+
+ 
+
+    <div class="parent">
+      <div class="child1">
+        <img src="pic/10.png" class="pic" />
+      </div>
+
+      <div class="child2">
+        <h1 class="cl_info">"INFORMATION"</h1>
+
+        <hr class="line1" />
+
+        <h3>FINNALA:</h3>
+        <p>Sectional, 4-seat corner, with open end/Grann/Bomstad black.</p>
+
+        <h3>Description:</h3>
+        <p>
+          FINNALA sectional sofa can grow and change with a home and the family. Choose how many seats, the look and function to create a sofa that suits you. A clean design and long-lasting comfort are included.
+        </p>
+
+        <h1>$2,779.00</h1>
+
+        <a href="../order-from.html"> <button>BUY NOW</button> </a>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <h1>SIGN UP NEWSLETTER</h1>
+      <br /><br />
+      <p>
+        Join our newsletter for updates on new arrivals, exclusive deals, and
+        the latest trends!
+      </p>
+
+      <br /><br />
+
+      <div class="barbutton">
+        <input
+          type="text"
+          class="bar"
+          placeholder="Enter Your Email"
+          required
+        />
+        <button class="butt">SUBSCRIBE</button>
+      </div>
+    </div>
+
+  
+
+    <div class="footer">
+      <div class="footer1">
+        <a href="../index.html"
+          ><img src="../images/footerlogo.jpg" class="logo"
+        /></a>
+        <a href="">Address: 3030 SW 8th St Miami</a>
+        <a href="">Phone: +92 327 2090308</a>
+        <a href="">Email: info@oxfardsofas.com</a>
+      </div>
+
+      <div class="footer2">
+        <p id="footerheading">USEFUL LINKS</p>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact </a>
+        <a href="login.html">Login</a>
+      </div>
+
+      <div class="footer3">
+        <p id="footerheading">CATEGORIES</p>
+        <a href="../bedroom.html">Bedroom</a>
+        <a href="../dinningroom.html">Dinning Room</a>
+        <a href="../livingroom.html">Living Room</a>
+        <a href="../decoration.html">Decoration</a>
+        <a href="../office.html">Office</a>
+      </div>
+
+      <div class="footer4">
+        <p id="footerheading">LET'S GET SOCIAL</p>
+        <div class="footericons">
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //Hamburger
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const nav = document.querySelector(".cate ul");
+
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("active");
+          nav.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

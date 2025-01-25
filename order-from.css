@@ -1,0 +1,283 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cate {
+  background-color: #151b24;
+  color: #ffae00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+  height: 50px;
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+a:hover {
+  color: #ffae00;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  gap: 65px;
+}
+
+/* contactus */
+
+.contheading {
+  margin-bottom: 40px;
+}
+
+.contacticon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#icon1 {
+  margin-right: 5px;
+}
+
+#icon2 {
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+.contactus {
+  margin: 80px;
+  text-align: center;
+}
+
+.contform {
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.contform1 {
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.contform2 {
+  width: 700px;
+  height: 35px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.contform3 {
+  width: 700px;
+  height: 35px;
+  border-radius: 5px;
+  border: 0.5px solid black;
+  padding: 0 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.contbutt {
+  /* padding: 15px 30px; */
+  width: 700px;
+  height: 35px;
+  background-color: #ffae00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Sign up Newsletter */
+
+.newsletter {
+  background-color: #151b24;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.barbutton {
+  gap: 20px;
+}
+
+.bar {
+  padding: 15px 20px;
+  border: none;
+  width: 500px;
+  border-radius: 5px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.butt {
+  padding: 15px 20px;
+  background-color: #ffae00;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  background-color: #151b24;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+#footerheading {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.footericons {
+  display: flex;
+  gap: 15px;
+}
+
+i:hover {
+  color: #ffae00;
+}
+
+.footer1 {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  gap: 20px;
+}
+
+.footer2 {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+.footer3 {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+.footer4 {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+/* Existing CSS remains the same until navbar */
+
+/* Contact Us Section Responsive Design */
+@media screen and (max-width: 768px) {
+  .contactus {
+    margin: 40px 20px;
+  }
+
+  /* .contform,
+  .contform1 {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 15px;
+  } */
+
+  .contform2,
+  .contform3,
+  .contbutt {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 15px;
+  }
+
+  .contacticon {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #icon1,
+  #icon2 {
+    margin: 0;
+  }
+}
+
+/* Newsletter Section Responsive Design */
+@media screen and (max-width: 768px) {
+  .newsletter {
+    padding: 50px 20px;
+  }
+
+  .barbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .bar {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+  }
+
+  .butt {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+  }
+}
+
+/* Footer Responsive Design */
+@media screen and (max-width: 992px) {
+  .footer {
+    grid-template-columns: auto auto;
+    padding: 50px 30px;
+    gap: 40px;
+  }
+
+  .contform,.contform1 {
+    width: 100%;
+  }
+
+ .contform1{
+    margin-top: 20px;
+ }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    grid-template-columns: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footericons {
+    justify-content: center;
+  }
+
+  .footer1,
+  .footer2,
+  .footer3,
+  .footer4 {
+    gap: 15px;
+  }
+}

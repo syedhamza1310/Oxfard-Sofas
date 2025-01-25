@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="handleLogin(event)" method="POST">
+                <div class="input-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+                <div class="links">
+                    <a href="#">Forgot Password?</a>
+                    <a href="signup.html">Create Account</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            // Redirect to index page
+            window.location.href = "index.html";
+        }
+        // const userEmail = "oxfardsofas@gmail.com";
+        // const userPassword = "oxfardsofas123";
+
+        // function handleLogin(event) {
+        //     event.preventDefault();
+        //     const form = event.target;
+        //     const email = form.querySelector('input[type="email"]').value;
+        //     const password = form.querySelector('input[type="password"]').value;
+
+        //     if (email === userEmail && password === userPassword) {
+        //         alert("Login Successful");
+        //         window.location.href = "index.html";
+        //     } else {
+        //         alert("Invalid Email or Password");
+        //     }
+        // }
+        // function handleSignup(event) {
+        //     event.preventDefault();
+        //     const form = event.target;
+        //     const name = form.querySelector('input[type="text"]').value;
+        //     const email = form.querySelector('input[type="zainhmed5102@gmail.com"]').value;
+        //     const password = form.querySelectorAll('input[type="abc123"]')[0].value;
+        //     const confirmPassword = form.querySelectorAll('input[type="abc123"]')[1].value;
+
+        //     // Add your validation logic here if needed
+            
+        //     // Redirect to index page
+        //     window.location.href = "index.html";
+        // }
+    </script>
+</body>
+</html>

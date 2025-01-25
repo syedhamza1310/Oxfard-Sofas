@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cate {
+    background-color: #151b24;
+    color: #ffae00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 50px;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    color: #ffae00;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 65px;
+}
+
+/* aboutus */
+
+.aboutus{
+   margin: 80px;
+   text-align: center;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 80px;
+    margin-bottom: 80px;
+    gap: 50px;
+}
+
+.about_text{
+   font-size: 21px;
+   text-align: justify;
+}
+
+.about_picture{
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+/* Sign up Newsletter */
+
+.newsletter {
+    background-color: #151b24;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.barbutton{
+    gap: 20px;
+}
+
+.bar{
+    padding: 15px 20px;
+    border: none;
+    width: 500px;
+    border-radius: 5px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.butt {
+    padding: 15px 20px;
+    background-color: #ffae00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;  
+}
+
+/* footer */
+
+#footerheading{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footericons{
+    display: flex;
+    gap: 15px;
+}
+
+i:hover {
+    color: #ffae00;
+}
+
+.footer {
+    background-color: #151b24;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+}
+
+.footer2 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.footer3 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+.footer4 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+
+
+/* Keep your existing CSS above, then add these media queries */
+
+/* Tablet and smaller devices (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .aboutus {
+        margin: 40px 20px;
+    }
+
+    .about {
+        margin: 0 20px 40px;
+        gap: 30px;
+    }
+
+    .about_text {
+        font-size: 18px;
+    }
+
+    .about_picture {
+        width: 400px;
+        height: 280px;
+    }
+
+    .bar {
+        width: 400px;
+    }
+
+    .footer {
+        padding: 50px 20px;
+        grid-template-columns: auto auto;
+        gap: 40px;
+    }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        margin: 0 15px 30px;
+    }
+
+    .about_text {
+        font-size: 16px;
+    }
+
+    .about_picture {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+    }
+
+    .newsletter {
+        padding: 50px 15px;
+    }
+
+    .barbutton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .bar {
+        width: 90%;
+        max-width: 400px;
+        margin-right: 0;
+    }
+
+    .butt {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 40px 15px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footericons {
+        justify-content: center;
+    }
+
+    .footer1, .footer2, .footer3, .footer4 {
+        gap: 15px;
+    }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .aboutus {
+        margin: 30px 15px;
+    }
+
+    .about {
+        gap: 20px;
+    }
+
+    .about_text {
+        font-size: 15px;
+    }
+
+    #footerheading {
+        font-size: 20px;
+    }
+}

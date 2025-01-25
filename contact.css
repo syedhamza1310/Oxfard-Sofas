@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cate {
+    background-color: #151b24;
+    color: #ffae00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 50px;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    color: #ffae00;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 65px;
+}
+
+/* contactus */
+
+.contheading {
+    margin-bottom: 40px;
+}
+
+.contacticon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#icon1 {
+    margin-right: 5px;
+}
+
+#icon2 {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.contactus {
+    margin: 80px;
+    text-align: center;
+}
+
+.contform {
+    width: 700px;
+    height: 35px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#contform{
+    height: 200px; 
+    padding-bottom: 170px; 
+}
+
+.contbutt {
+    /* padding: 15px 30px; */
+    width: 700px;
+    height: 35px;
+    background-color: #ffae00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* Sign up Newsletter */
+
+.newsletter {
+    background-color: #151b24;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.barbutton {
+    gap: 20px;
+}
+
+.bar {
+    padding: 15px 20px;
+    border: none;
+    width: 500px;
+    border-radius: 5px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.butt {
+    padding: 15px 20px;
+    background-color: #ffae00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* footer */
+
+.footer {
+    background-color: #151b24;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+#footerheading {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footericons {
+    display: flex;
+    gap: 15px;
+}
+
+i:hover {
+    color: #ffae00;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+}
+
+.footer2 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.footer3 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+.footer4 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+
+
+/* Keep your existing CSS above, then add these media queries */
+
+/* Tablet and smaller devices (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .contactus {
+        margin: 40px;
+    }
+
+    .contform {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    #contform {
+        height: 180px;
+    }
+
+    .contbutt {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .bar {
+        width: 400px;
+    }
+
+    .footer {
+        padding: 50px 20px;
+        grid-template-columns: auto auto;
+        gap: 40px;
+    }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .contactus {
+        margin: 30px 20px;
+    }
+
+    .contheading {
+        margin-bottom: 30px;
+    }
+
+    .contacticon {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #icon2 {
+        margin-left: 0;
+    }
+
+    .contform {
+        max-width: 100%;
+        height: 40px;
+    }
+
+    #contform {
+        height: 150px;
+    }
+
+    .contbutt {
+        max-width: 100%;
+        height: 40px;
+    }
+
+    .newsletter {
+        padding: 50px 15px;
+    }
+
+    .barbutton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .bar {
+        width: 90%;
+        max-width: 400px;
+        margin-right: 0;
+    }
+
+    .butt {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 40px 15px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footericons {
+        justify-content: center;
+    }
+
+    .footer1, .footer2, .footer3, .footer4 {
+        gap: 15px;
+    }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .contactus {
+        margin: 20px 15px;
+    }
+
+    .contheading {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+
+    .contacticon {
+        font-size: 0.9em;
+    }
+
+    .contform {
+        height: 35px;
+    }
+
+    #contform {
+        height: 120px;
+    }
+
+    .contbutt {
+        height: 35px;
+    }
+
+    #footerheading {
+        font-size: 20px;
+    }
+}

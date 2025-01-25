@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.h3{
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content {
+    width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 10px; /* Add border-radius to the card */
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: .4s;
+    overflow: hidden; /* Ensure content stays within the rounded corners */
+    padding-bottom: 20px; /* Increase bottom padding inside the card */
+}
+.img1{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+
+}
+
+.content .img1 {
+    border-top-left-radius: 25px; /* Curve top-left corner */
+    border-top-right-radius: 25px; /* Curve top-right corner */
+}
+
+.content:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+        0 3px 6px rgba(0, 0, 0, 0.23);
+    transform: translate(0px, -8px);
+
+}
+
+.img1 {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.pra {
+    text-align: center;
+    padding-top: 0 8px;
+}
+
+h6 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+.design-head{
+    color: #000;
+    text-decoration: none;
+}
+.rating {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 0; /* Remove gap between stars */
+}
+
+.fa-star.checked{
+    font-size: 14px;
+}
+
+.fa-star.checked:hover {
+    transform: scale(1.3);
+    transition: .6s;
+}
+
+/* Ensure unchecked stars stay gray even on hover */
+.fa-star:not(.checked) {
+    color: #ccc;
+}
+
+.fa-star:not(.checked):hover {
+    color: #ccc;
+    transform: none;
+}
+
+.content , .content h3, .content h6 {
+    border-bottom-left-radius: 10px; /* Curve bottom-left corner */
+    border-bottom-right-radius: 10px; /* Curve bottom-right corner */
+}
+
+.tt {
+    padding: 5px;
+}
+
+.fa {
+    font-size: 26px;
+    transition: .4s;
+
+}
+
+.checked {
+    color: #ffae00;
+}
+
+.fa:hover {
+    transform: scale(1.3);
+    transition: .6s;
+}
+.buy-1{
+    background: #151b24;
+    color: white;
+}
+.buy-1:hover{
+    color: #ffae00;
+}
+.buy-2{
+    background: #151b24;
+    color: white;
+}
+.buy-2:hover{
+    color: #ffae00;
+}
+.buy-3{
+    background: #151b24;
+    color: white;
+}
+.buy-3:hover{
+    color: #ffae00;
+}
+.buy-4{
+    background: #151b24;
+    color: white;
+}
+.buy-4:hover{
+    color: #ffae00;
+}
+.fa-star {
+    font-size: 1em; 
+}
+
+
+
+.cate {
+    background-color: #151b24;
+    color: #ffae00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    height: 50px;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    color: #ffae00;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    gap: 65px;
+}
+
+/* banner */
+
+.bann {
+    /* margin-top: 20px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+/* Sign up Newsletter */
+
+.newsletter {
+    background-color: #151b24;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.barbutton{
+    gap: 20px;
+}
+
+.bar{
+    padding: 15px 20px;
+    border: none;
+    width: 500px;
+    border-radius: 5px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.butt {
+    padding: 15px 20px;
+    background-color: #ffae00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+/* footer */
+
+#footerheading{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footericons{
+    display: flex;
+    gap: 15px;
+}
+
+i:hover {
+    color: #ffae00;
+}
+
+.footer {
+    background-color: #151b24;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 20px;
+}
+
+.footer2 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.footer3 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+.footer4 {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .content {
+        width: 30%;
+    }
+    
+    .footer {
+        grid-template-columns: auto auto;
+        gap: 40px;
+        padding: 60px 40px;
+        justify-content: center;
+
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        width: 45%;
+    }
+    
+    .bar {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      
+      .newsletter {
+        padding: 50px 15px;
+      }
+
+    .gallery {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 90%;
+        margin: 10px;
+    }
+    
+    .footer {
+        grid-template-columns: auto;
+        padding: 40px 20px;
+    }
+    
+    .footer1, .footer2, .footer3, .footer4 {
+        gap: 15px;
+    }
+
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    .bann {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content {
+        width: 95%;
+        margin: 8px;
+    }
+    
+    .img1 {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .footer {
+        padding: 30px 15px;
+    }
+    
+    #footerheading {
+        font-size: 20px;
+    }
+}
